@@ -99,6 +99,11 @@ namespace IRLab.Tools.Timer
         private bool useUnscaledDeltaTime;
         private Action action;
 
+        /// <summary>
+        /// The elapsed time
+        /// </summary>
+        public float ElapsedTime { get => time;}
+
         public Timer(GameObject gameObject, Action action, float time, string functionName, bool useUnscaledDeltaTime)
         {
             this.gameObject = gameObject;
@@ -117,8 +122,10 @@ namespace IRLab.Tools.Timer
 
             if (time <= 0)
             {
+                
                 action();
                 DestroySelf();
+                time = 0;
             }
         }
 

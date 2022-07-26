@@ -1,6 +1,6 @@
 {
   "name": "com.irlab.irlab-unity-tools",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "displayName": "IRLab Unity Tools",
   "description": "Contains code that usually end up being written when working on projects.",
   "unity": "2021.3",
