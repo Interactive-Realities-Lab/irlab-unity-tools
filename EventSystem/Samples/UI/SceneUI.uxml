@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="Intro" style="flex-direction: column; margin-left: 15px; margin-right: 15px; margin-top: 15px; margin-bottom: 15px;">
+        <ui:Label text="Event System Demonstration:" display-tooltip-when-elided="true" name="ui-intro-1" style="width: auto; -unity-text-align: middle-left; font-size: 20px; margin-bottom: 20px; -unity-font-style: bold;" />
+        <ui:Label display-tooltip-when-elided="true" name="ui-intro-2" text="The event system is implemented using Scriptable Objects that act as communication channels between the objects that broadcast events and the objects that are listening to event. " style="font-size: 15px; margin-left: 30px; white-space: normal; margin-bottom: 20px;" />
+        <ui:Label display-tooltip-when-elided="true" name="ui-intro-3" text="This example has two communication channels implemented, one for events that does not pass any information as argument [1], and another that passes integer data as argument [2]." style="font-size: 15px; margin-left: 30px; white-space: normal;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="Instructions" style="flex-direction: column; margin-left: 15px; margin-right: 15px; margin-top: 15px; margin-bottom: 15px;">
+        <ui:Label text="Instructions:" display-tooltip-when-elided="true" name="ui-instruction-1" style="width: auto; -unity-text-align: middle-left; font-size: 20px; margin-bottom: 20px; -unity-font-style: bold;" />
+        <ui:Label display-tooltip-when-elided="true" name="ui-instruction-2" text="- [1] Press &quot;Space&quot; to broadcast an event that toogles the cube&apos;s color." style="font-size: 15px; margin-left: 30px; white-space: normal;" />
+        <ui:Label text="- [2] Press &quot;N&quot; to broadcast an event that updates the counter in the screen." display-tooltip-when-elided="true" name="ui-instruction-3" style="width: auto; -unity-text-align: middle-left; font-size: 15px; margin-left: 30px; white-space: normal;" />
+        <ui:Label text="- [Practice] Explore the way that events are created and try to implement a new event channel that changes the cube&apos;s scale when the &quot;M&quot; key is pressed. Most of the code is already provided." display-tooltip-when-elided="true" name="ui-instruction-4" style="width: auto; -unity-text-align: middle-left; font-size: 15px; margin-left: 30px; white-space: normal;" />
+    </ui:VisualElement>
+    <ui:VisualElement style="flex-direction: row; margin-top: 15px; margin-left: 15px; margin-right: 15px; margin-bottom: 15px;">
+        <ui:Label text="Counter: " display-tooltip-when-elided="true" name="ui-label-counter" style="width: auto; -unity-text-align: middle-left; font-size: 20px; -unity-font-style: bold;" />
+        <ui:Label display-tooltip-when-elided="true" name="ui-counter" style="font-size: 20px;" />
+    </ui:VisualElement>
+</ui:UXML>
