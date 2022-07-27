@@ -1,8 +1,6 @@
 using EventSystem.Listener;
-using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace EventSystem.Event {
 
