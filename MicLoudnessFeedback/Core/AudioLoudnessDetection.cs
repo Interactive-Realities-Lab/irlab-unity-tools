@@ -6,12 +6,18 @@ namespace IRLab.Tools.MicLoudness
 {
     public class AudioLoudnessDetection : MonoBehaviour
     {
+
+        [Header("Dependencies")]
+        public AudioSource audioSource;
+
+        [Header("Settings")]
         public int sampleWindow = 64;
-        private AudioClip micClip;
+        //private AudioClip micClip;
+
         // Start is called before the first frame update
         void Start()
         {
-            MicToAudioClip();
+            //MicToAudioClip();
         }
 
         // Update is called once per frame
@@ -20,15 +26,16 @@ namespace IRLab.Tools.MicLoudness
 
         }
 
-        public void MicToAudioClip()
-        {
-            string micName = Microphone.devices[0];
-            micClip = Microphone.Start(micName, true, 20, AudioSettings.outputSampleRate);
-        }
+        //public void MicToAudioClip()
+        //{
+        //    //string micName = Microphone.devices[0];
+        //    //micClip = Microphone.Start(micName, true, 20, AudioSettings.outputSampleRate);
+        //}
 
         public float GetLoudnessFromMic()
         {
-            return GetLoudnessFromAudioClip(Microphone.GetPosition(Microphone.devices[0]), micClip);
+            if (!Microphone.IsRecording(null)) return 0f;
+            return GetLoudnessFromAudioClip(Microphone.GetPosition(null), audioSource.clip);
         }
 
         public float GetLoudnessFromAudioClip(int clipPosition, AudioClip clip)
