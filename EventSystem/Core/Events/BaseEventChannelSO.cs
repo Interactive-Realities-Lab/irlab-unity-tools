@@ -1,8 +1,8 @@
-using EventSystem.Listener;
+using IRLab.EventSystem.Listener;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace EventSystem.Event {
+namespace IRLab.EventSystem.Event {
 
     public class BaseEventChannelSO<T> : ScriptableObject
     {

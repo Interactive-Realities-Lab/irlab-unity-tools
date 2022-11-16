@@ -1,7 +1,9 @@
 {
-    "name": "com.irlab.eventsystem",
+    "name": "irlab.eventsystem.sample",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:7e9e4755abd525a4a8c0199595c58cd6"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

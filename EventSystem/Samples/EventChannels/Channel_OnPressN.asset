@@ -9,6 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66e42f868b855e4498d01145cbce16e0, type: 3}
+  m_Script: {fileID: 11500000, guid: ef70e2820783cde4b86584984bf2aae3, type: 3}
   m_Name: Channel_OnPressN
   m_EditorClassIdentifier: 

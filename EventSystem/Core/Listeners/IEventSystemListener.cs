@@ -1,4 +1,4 @@
-namespace EventSystem.Listener
+namespace IRLab.EventSystem.Listener
 {
     public interface IEventSystemListener<T>
     {

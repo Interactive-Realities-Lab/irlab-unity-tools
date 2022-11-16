@@ -1,7 +1,7 @@
-using EventSystem.Event;
-using EventSystem.UnityEvent;
+using IRLab.EventSystem.Event;
+using IRLab.EventSystem.UnityEvent;
 
-namespace EventSystem.Listener
+namespace IRLab.EventSystem.Listener
 {
     public class VoidListener : BaseEventSystemListener<Void, VoidEventChannelSO, UnityVoidEvent> { }
 }

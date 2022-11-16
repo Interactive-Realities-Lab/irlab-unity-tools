@@ -312,7 +312,7 @@ GameObject:
   - component: {fileID: 1555227619}
   - component: {fileID: 1555227618}
   - component: {fileID: 1555227621}
-  - component: {fileID: 1555227620}
+  - component: {fileID: 1555227622}
   m_Layer: 5
   m_Name: UIDocument
   m_TagString: Untagged
@@ -351,34 +351,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1555227620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1555227617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bae29676bf95e9f47acd9cff141e5166, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  channel: {fileID: 11400000, guid: 11657c82cb8e1ae4099286e059ffbf15, type: 2}
-  unityEventResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1555227621}
-        m_TargetAssemblyTypeName: UpdateCounter, Assembly-CSharp
-        m_MethodName: RefreshCounter
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1555227621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -392,6 +364,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonTag: ui-counter
+--- !u!114 &1555227622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555227617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b84689e050dcec499a942207293a572, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  channel: {fileID: 11400000, guid: 435ada88df818e04193b4e2d992e4917, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1555227621}
+        m_TargetAssemblyTypeName: UpdateCounter, irlab.eventsystem.sample
+        m_MethodName: RefreshCounter
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1698814447
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,15 +512,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1698814447}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba06e505ef8c024428a7689a71624f92, type: 3}
+  m_Script: {fileID: 11500000, guid: 031e5c4ad5800bb4d91295081ecc8397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  channel: {fileID: 11400000, guid: a5a1a22cbd426fa43a89e42e12e57da6, type: 2}
+  channel: {fileID: 11400000, guid: aa7c80d1af54e0846862f3392afb1957, type: 2}
   unityEventResponse:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1698814453}
-        m_TargetAssemblyTypeName: ChangeColor, Assembly-CSharp
+        m_TargetAssemblyTypeName: ChangeColor, irlab.eventsystem.sample
         m_MethodName: GetRandomColor
         m_Mode: 1
         m_Arguments:
@@ -560,8 +560,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 340b2a69b9a85b447825b7ffcda12fc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onSpacePressed: {fileID: 11400000, guid: a5a1a22cbd426fa43a89e42e12e57da6, type: 2}
-  onKeyNPressed: {fileID: 11400000, guid: 11657c82cb8e1ae4099286e059ffbf15, type: 2}
+  onSpacePressed: {fileID: 11400000, guid: aa7c80d1af54e0846862f3392afb1957, type: 2}
+  onKeyNPressed: {fileID: 11400000, guid: 435ada88df818e04193b4e2d992e4917, type: 2}
 --- !u!4 &1969555829
 Transform:
   m_ObjectHideFlags: 0

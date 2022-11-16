@@ -1,7 +1,7 @@
 
 using UnityEngine;
 
-namespace EventSystem.Event
+namespace IRLab.EventSystem.Event
 {
     [CreateAssetMenu(fileName = "New Void Event", menuName = "Event System/Void Event")]
     public class VoidEventChannelSO : BaseEventChannelSO<Void>

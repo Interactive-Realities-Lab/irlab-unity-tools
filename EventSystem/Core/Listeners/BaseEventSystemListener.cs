@@ -1,8 +1,8 @@
 using UnityEngine;
 using UnityEngine.Events;
-using EventSystem.Event;
+using IRLab.EventSystem.Event;
 
-namespace EventSystem.Listener
+namespace IRLab.EventSystem.Listener
 {
     public abstract class BaseEventSystemListener<T, E, UER> : MonoBehaviour,
         IEventSystemListener<T> where E : BaseEventChannelSO<T> where UER : UnityEvent<T>
