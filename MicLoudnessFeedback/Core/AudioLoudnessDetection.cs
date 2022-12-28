@@ -17,7 +17,7 @@ namespace IRLab.Tools.MicLoudness
         // Start is called before the first frame update
         void Start()
         {
-            //MicToAudioClip();
+            MicToAudioClip();
         }
 
         // Update is called once per frame
@@ -26,11 +26,11 @@ namespace IRLab.Tools.MicLoudness
 
         }
 
-        //public void MicToAudioClip()
-        //{
-        //    //string micName = Microphone.devices[0];
-        //    //micClip = Microphone.Start(micName, true, 20, AudioSettings.outputSampleRate);
-        //}
+        public void MicToAudioClip()
+        {
+            string micName = Microphone.devices[0];
+            audioSource.clip = Microphone.Start(micName, true, 20, AudioSettings.outputSampleRate);
+        }
 
         public float GetLoudnessFromMic()
         {
@@ -54,7 +54,7 @@ namespace IRLab.Tools.MicLoudness
             {
                 totalLoudness += Mathf.Abs(waveData[i]);
             }
-
+            Debug.Log(totalLoudness / sampleWindow);
             return totalLoudness / sampleWindow;
         }
     }
